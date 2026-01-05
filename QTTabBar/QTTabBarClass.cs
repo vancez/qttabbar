@@ -6855,6 +6855,7 @@ namespace QTTabBarLib {
         private void tabControl1_MouseUp(object sender, MouseEventArgs e) {
             if (null == tabControl1 || tabControl1.IsDisposed)
             {
+                NowTabDragging = false
                 // 如果是最后一个标签，则出现bug
                 return;
             }
